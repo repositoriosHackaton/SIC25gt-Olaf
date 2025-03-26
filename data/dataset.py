@@ -14,7 +14,7 @@ df = df.drop(columns=['director', 'director.1', 'pais', 'pais.1'])
 df['link'] = df['plataforma'].map({
     'Disney plus': 'https://www.disneyplus.com/home',
     'Hulu': 'https://www.hulu.com/welcome',
-    'Amazon Prime': 'https://www.primevideo.com/',
+    'Amazon Prime ': 'https://www.primevideo.com/',
     'Netflix': 'https://www.netflix.com/'
 })
 
@@ -22,5 +22,5 @@ df['link'] = df['plataforma'].map({
 df['link'] = df['link'].fillna('Sin Link')
 
 # Guardar el nuevo DataFrame en un archivo (opcional)
-df.to_csv('archivo_modificado.csv', index=False)
-print(df)
+df.to_csv('dataset2.csv', index=False)
+# print(df)
